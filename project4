@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int arr[5];
+	cout << "Enter elements:"<< endl;
+	
+	int i;
+	for(i=0;i<=4;i++)
+	{
+		cin >> arr[i];
+	}
+	
+	int *p = arr;
+	int j;
+	
+	cout << "You entered:";
+	for(j=0;j<=4;j++)
+	{
+		cout<<*p<<endl;
+		p++;
+	}
+	return 0;
+}
